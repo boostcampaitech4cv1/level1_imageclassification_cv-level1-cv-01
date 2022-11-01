@@ -34,7 +34,10 @@
             "amsgrad": true
         }
     },
-    "loss": "CE_loss",
+    "loss": {
+        "type": "CE_loss",
+        "args": {}
+    },
     "metrics": [
         "accuracy", "f1_score"
     ],

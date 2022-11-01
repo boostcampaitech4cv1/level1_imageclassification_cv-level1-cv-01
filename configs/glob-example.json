@@ -12,7 +12,7 @@
     "arch": {
         "type": "efficientnet",
         "args": {
-            "model_name": "efficientnet-b7",
+            "model_name": "efficientnet-b0",
             "num_classes": 18
         }
     },
@@ -35,7 +35,10 @@
             "amsgrad": true
         }
     },
-    "loss": "CE_loss",
+    "loss": {
+        "type": "CE_loss",
+        "args": {}
+    },
     "metrics": [
         "accuracy", "f1_score"
     ],
